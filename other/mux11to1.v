@@ -1,15 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company:  University of Utah     
-// Engineer:   Donovan Bidlack
-// 
-// Create Date: 07/17/2019 08:10:12 PM
-// Module Name: mux11to1
-// Project Name: MLA on an FPGA
-// Target Devices: CMOD S7-25: Spartan 7
-// Description: Takes 11 inputs and outputs the active 1
-// 
-//////////////////////////////////////////////////////////////////////////////////
+// Program that takes 11 inputs and outputs the active 1
 
 module mux11to1 (      input clk,
                        input data_a_ready,
@@ -202,3 +192,5 @@ always @ (posedge clk) begin
     endcase
 end
 endmodule
+
+// Ref-https://github.com/xdkxsquirrel/ML-HFT-FPGA 
