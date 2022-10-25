@@ -86,3 +86,5 @@ parallel_to_serial_buffer serializer(clk, UART_active, unserialized_data_valid, 
 UART_TX tx(clk, serialized_data_ready, transmit_byte, UART_active, pio47, transmit_done);
 
 endmodule
+
+// Ref-https://github.com/xdkxsquirrel/ML-HFT-FPGA 
